@@ -15,8 +15,6 @@ sdc format :used for converting the constraints to sdc format.
 
 2.) convert format[1] and sdc format into format[2] and pass to the timing tool 'opentimer'(used to create data sheet)similar to STA ENGINE.
 
-3.)Generate output report.
-
 # TASK 1:
 > Create command {for eg. vsdsynth} and pass .csv fle from unix shell to tcl script
 ----------------------------------------------------------------------------------------------------------------------
@@ -124,3 +122,13 @@ formatting in the suitable format for .sdc file
 
 # Result :
 ![image](https://github.com/Swapnil-Dubey25/TCL_programming/assets/109385480/c0f36cc5-b50a-45bb-a99c-dac2e4ddc6ce)
+
+# subtask (F)
+(a) Using the yosys tool for synthesis the gate level netlist 
+(b) using Hierarchy error checklist to determine the error flags and further help in debugging the error in the design
+
+script for automating the hierarchy check and error detection in the gate level netlist 
+![Screenshot (95)](https://github.com/Swapnil-Dubey25/TCL_programming/assets/109385480/97e4a643-ea6e-49fb-8df4-e0392d22a8ee)
+
+# TASK 3:
+FURTHER USING THE OPENTIMER TOOL FOR GENERATING THE DATE SHEET.
