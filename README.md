@@ -7,7 +7,7 @@ Tcl (Tool Command Language) is a scripting language that provides a simple yet p
 BUILD A USER INTERFACE WHICH WILL TAKE A EXCEL SHEET(.csv FILE) AS INPUT AND GET THE DATA SHEET(TIMING RESULTS) AS OUTPUT, USING VARIOUS OPENSOURCE SYNTHESIS TOOL SUCH AS YOSYS ETC...
 
 # Subtask:
-1.) Create command {for eg. vsdsynth} and pass .csv fle(openMSP430_design_details.csv) from unix shell to tcl script
+1.) Create command {for eg. vsdsynth} and pass .csv file(openMSP430_design_details.csv) from unix shell to tcl script
 
 2.)convert all input to format[1] and .SDC format and pass to synthesis tool "yosys".
 format[1] which is need for the synthesis tool 'yosys'.
