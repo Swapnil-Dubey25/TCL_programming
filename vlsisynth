@@ -1,0 +1,41 @@
+#!/bin/tcsh -f
+echo
+echo
+echo
+echo "         *                 *     *               **********    **********    *************          *              *         *                      "
+echo "          *             *       *               *                 *                *              *   *          *   *       *                        "
+echo  "          *           *        *               *                 *                *             *      *      *       *     *                        "
+echo  "          *         *         *               **********        *                 *            *        *     *       *     *                        "
+echo  "            *     *           *                        *        *                *            *        *     *      *      *                        "
+echo  "             * *             *                        *        *                *              *    *        *    *       *                        "
+echo  "              *             **********      *********     ***********          *                 *             *         ************             "
+echo                                                        
+echo
+echo     ---------------------------"-A unique user interface  (UI) that will take RTL nelist & SDC constraints as input and will generate"--------------------
+echo     ---------------------------"synthesized netlist & pre layout timing report as an output. it uses yosys open0souce tool for synthesis"----------------
+echo    -------------------------------------------------------"and opentimer to generate prelayout timing reports"---------------------------------------------------
+echo
+#-----------------------------------------------------#
+#--------------------Tool initialization--------------#
+#-----------------------------------------------------#
+
+
+if ($#argv != 1) then
+	echo "Info:please provide the csv file"
+	exit 1
+endif
+if (! -f $argv[1] || $argv[1] == "-help") then
+	if ($argv[1] != "-help") then
+          echo  "error:cannot find csv file $argv[1] .existing..."
+           exit 1
+   else
+	   echo  "MY USAGE:./VLSISYNTH \<CSV FILE\>"
+	   echo "=================================="
+	   echo "----------------------------------"
+	   echo "----------------------------------"
+	   echo "=================================="
+	   exit 1
+     endif
+else
+	     tclsh vlsisynth.tcl $argv[1]
+     endif
